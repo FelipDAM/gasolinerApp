@@ -1,0 +1,32 @@
+name: tu_app
+description: 
+publish_to: 'none' # Si no deseas publicar tu paquete en pub.dev
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^2.10.1
+  google_maps_webservice: ^0.0.20-nullsafety.5
+  flutter_polyline_points: ^1.0.0 
+  geolocator: ^11.0.0
+  google_place: ^0.4.7
+  url_launcher: ^6.2.5
+  flutter_dotenv: ^5.1.0
+  flutter_map_marker_cluster: ^1.1.1
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - lib/config/places.json
+    - .env
+
+  uses-material-design: true
