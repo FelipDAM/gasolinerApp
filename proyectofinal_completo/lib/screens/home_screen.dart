@@ -57,7 +57,7 @@ class _MapaScreenState extends State<MapaScreen> {
       final gasolinerasFiltradas = Distancia.filtrarGasolineras(
         lista: gasolineras,
         centro: ubicacionActual,
-        radioKm: 200,
+        radioKm: 20,
       );
 
       final nuevosMarcadores = await crearMarcadoresGasolineras(
